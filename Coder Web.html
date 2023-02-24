@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Web</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%; background-image: url(img/2.jpg); background-position: center; background-size: cover; height: 100vh; font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar{
+            width: 95%;
+            height: auto;
+            margin-left: 30px;
+        
+        }
+        .logo{
+            color: rgb(39, 25, 230);
+            font-size: 40px;
+            font-family: cursive;
+            float: left;
+            padding-top: 0.6%;
+            cursor: pointer;
+            background-color: ;
+
+        }
+        .logo:hover{
+            color: rgb(218, 221, 11);
+            transition: 5s ease;
+        }
+        .menu{
+            width: 600px;
+            float: left;
+            height: 70px;
+        }
+        ul{
+            float: left;
+            display: flex;
+            padding-top: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 14%;
+
+        }
+        ul li{
+            list-style: none;
+            margin-left: 60px;
+            font-size: 16px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: rgb(240, 12, 12);
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: .3s ease;
+        }
+        ul li a:hover{
+            color: gold;
+            text-decoration: underline solid 3px purple;
+        }
+        .title{
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title h1{
+            cursor: pointer;
+            font-family: cursive;
+            color: #fff;
+            font-size: 50px;
+        }
+        .button{
+            position: absolute;
+            top: 51%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+       .title p{
+            color: rgb(25, 231, 6);
+            text-align: center;
+        }
+        .title h1:hover{
+            color: chartreuse;
+            transition: 3s ease;
+            box-shadow: 15px darkblue;
+        }
+        .search{
+            top: 59%;
+            left: 45%;
+            display: flex;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        .search input{
+            
+            color: rgb(20, 22, 5);
+            padding: 15px 135px;
+            font-size: 18px;
+            transition: 3s ease;
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+            margin-top: 10px;
+            border: none;
+            text-align: left;
+        }
+        .search input:hover{
+        box-shadow: 0 10px 15px rgb(177, 165, 4);
+        
+        }
+
+        .btn{
+            color: rgb(184, 214, 12);
+            padding: 5px 90px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 3s ease;
+            background-color: chocolate;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            background-color: #fff;color: black;
+            box-shadow: 0 10px 15px rgb(6, 233, 17);
+        }
+        .button1{
+            position: absolute;
+            top: 60%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .btn1{
+            color: rgb(235, 227, 233);
+            padding: 16px 64px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 3s ease;
+            background-color: rgb(3, 12, 26);
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+        .btn1:hover{
+            background-color: #fff;color: black;
+            box-shadow: 0 10px 15px springgreen;
+        }
+        video{
+            display: flex; width: 100%;
+            height: 100vh;
+            
+        }
+        /* page two about me*/
+        .container{
+            background-image: url(img/6.jpg);
+            background-position: center; 
+            background-size: cover; 
+            height: 100vh; 
+           border: none;
+           top: 50%;
+           
+        }
+        .card{
+            background-color: rgb(146, 148, 147);
+            height: 400px;
+            width: 400px;
+            border-radius: 15px;
+            padding: 20px;
+           text-decoration: none;
+           color: rgb(213, 216, 195);
+        
+        }
+        .card-btn{
+            margin: 50px;
+            
+        }
+        .card-btn h1{
+            color: rgb(229, 233, 9);
+        }
+        /* page 3 services */
+        .page{
+            background-image: url(img/5.jpg);
+        }
+         </style>
+</head>
+<body>
+    <div class="main" id="Home">
+        <div class="navbar">
+            <h2 class="logo">jaffer Codes</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About Me"> About Me</a></li>
+                <li><a href="#"> Services</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="title">
+        <h1>Jaffer Web Developer</h1>
+        <p>Hi Everyone, This is Jaffer Hussain and I am a Full Stake Web Developer.</p>
+        
+    </div>
+    <div class="button">
+        
+        <a href="#" class="btn">Read More...</a>
+    </div>
+    <div class="search"><input type="text" placeholder="Tap to Search"></div>
+    <div class="button1">
+        
+        <a href="#" class="btn1">Search</a>
+    </div> 
+    <center>
+    <section class="container" id="About Me">
+        
+        <div class="card">
+           <div class="card-btn"> <h1>
+                ..*..About Me..*..
+            </h1></div>
+            <div>
+            <p align="justify">  I am Jaffer hussain.I live in cambodia and I am founder of this website and i realy enjoy to make this website.i want to help those people who want to learn web designing.This website is a basic step for all generation to learn web development with the help of different tools, such as HTML, CSS, Java Script, PHP, Adobe Photoshop and SQL.This site have many easy ways to earn money by online.if you don't have job, don't think too much come and join us.We have all passions. We also want to give you such a simple and attractive website just as you request for learner.
+                Thank You For Being With Us 🙂</p>
+            </div>
+        </div>
+    
+    </section>
+</center>
+<div class="page3">
+    <div class="services">
+
+
+    </div>
+</div>
+    
+</div>
+</body>
+</html>
